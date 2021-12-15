@@ -65,9 +65,9 @@ let distance = ((speedofFisrt + speedofSecond) / time);
 */
 const randomNumber = Math.floor(Math.random() * 100);
 
-if (randomNumber <= 20) {
+if (randomNumber < 20) {
     console.log("randomNumber smaller 20");
-} else if (randomNumber >= 50) {
+} else if (randomNumber > 50) {
     console.log("randomNumber bigger 50");
 } else {
     console.log('randomNumber bigger 20 and smaller 50');
@@ -81,10 +81,10 @@ if (randomNumber <= 20) {
 const randomNumber2 = Math.floor(Math.random() * 100);
 
 switch (randomNumber2) {
-    case "<= 20":
+    case "< 20":
         console.log("randomNumber smaller 20");
         break;
-    case ">= 50":
+    case "> 50":
         console.log("randomNumber bigger 50");
         break;
     default:
